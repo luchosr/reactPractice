@@ -14,9 +14,26 @@
       crossorigin
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
     ></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+    <!-- <script crossorigin="" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.js"></script> -->
   </head>
   <body>
+    <div id="root"></div>
 
-    
+
+        <script type="text/babel" >
+            //aca va el codigo React
+
+            class App extends React.Component{
+                render(){
+                    return( 
+                        <h1>Hello React!</h1>
+                        );   
+                }
+            }
+
+            ReactDOM.render(<App />, document.getElementById('root'));
+        </script>
   </body>
 </html>
