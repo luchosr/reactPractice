@@ -1,3 +1,6 @@
+import React, {Component} from 'react';
+
+
 const TableHeader  = () =>{
     return(
         <thead>
@@ -8,3 +11,5 @@ const TableHeader  = () =>{
         </thead>
     );
 }
+
+export default TableHeader;

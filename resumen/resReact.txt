@@ -1,0 +1,41 @@
+Conceptos importantes que hay que entender en React:
+
+What is React?
+React is a JavaScript library – one of the most popular ones, with over 100,000 stars on GitHub.
+React is not a framework (unlike Angular, which is more opinionated).
+React is an open-source project created by Facebook.
+React is used to build user interfaces (UI) on the front end.
+React is the view layer of an MVC application (Model View Controller)
+
+
+JSX = JavaScript + XML
+
+* Con JSX podemos escribir codigo simil HTML como por ejemplo:
+
+const heading = <h1 className="site-heading">Hello, React</h1>;
+
+* className se usa en vez de clase a la hora de agregar clases de CSS ya que class es una palabra reservada en JS.
+
+* Las propiedades y métodos en JSX usan camelCase, ejemplo: onclick ---> onClick.
+
+* Siempre los tags autocerrables tienen que tener barra inclinada, ej: <img/>.
+
+- Las expresiones de javascript pueden ser embebidas dentro del codigo JSX incluyendolas entre llaves incluyendo variables, funciones y propiedades.
+
+const name = 'Tania';
+const heading = <h1>Hello, {name}</h1> ;
+
+
+**** Para correr los componentes tenes que renderizarlos en App y pones npm start en la carpeta contenedora.*****
+
+COMPONENTES:
+
+- Casi todo en React consiste en componentes, (como la practica App que hicimos) que pueden ser componentes de clase, o componentes simples. (los componentes simples no usan la Key "class", simplificandose a una funcion con retorno.)
+
+- La mayoría de las apliaciones React estan hechas por componentes mas pequeños y se cargan en el componente principal "App". Cada componente suele tener su propio archivo.
+
+- Conviene separar los componentes en archivos ya que le da mas estabilidad a la aplicación.
+
+- Todos los componentes personalizados (o de clase) se nombran con la primer letra en mayusculas, ej App, Table, etc.
+
+- En App.js importamos cada componente de la manera import Table from './Table'; y lo renderizamos en el método render de App con el tag del mismo <Table/> dentro de un div.container
